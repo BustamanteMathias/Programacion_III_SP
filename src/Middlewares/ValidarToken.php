@@ -24,7 +24,7 @@ class ValidarToken{
             }
             else
             {
-                $response->getBody()->write(json_encode(array("Estado" => "Correcto", "Token" => $token)));
+                $response->getBody()->write(json_encode(array("Estado Token" => "Correcto", "Token" => $token)));
                 $existingContent = (string) $response->getBody();
                 $response = $handler->handle($request);
                 $response->getBody()->write($existingContent);

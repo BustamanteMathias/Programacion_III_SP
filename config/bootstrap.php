@@ -9,7 +9,7 @@ new Database();
 
 //APLICACION
 $app = AppFactory::create();
-$app->setBasePath("/parcialDos/public");
+$app->setBasePath("/Programacion_III_SP/public");
 $app->addRoutingMiddleware();
 
 $customErrorHandler = function (

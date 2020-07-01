@@ -14,7 +14,7 @@ class Database
         $capsule->addConnection([
             'driver'    => 'mysql',
             'host'      => 'localhost',
-            'database'  => 'parcial',
+            'database'  => 'parcial2',
             'username'  => 'root',
             'password'  => '',
             'charset'   => 'utf8',

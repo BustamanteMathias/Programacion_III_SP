@@ -7,9 +7,9 @@ class Token
 {
     public static $key = 'pro3-parcial';
 
-    public static function NewTokenUser($email, $clave)
+    public static function NewTokenUser($email, $clave, $tipo)
     {
-        $payload = array("email" => $email, "clave" => $clave );
+        $payload = array("email" => $email, "clave" => $clave , "tipo" => $tipo);
 
         return Token::Encode($payload);
     }
